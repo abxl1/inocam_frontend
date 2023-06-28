@@ -5,6 +5,7 @@ import Input from "./components/Input";
 import WorkingList from "./components/WorkingList";
 
 function App() {
+	
 	const [todo, setTodo] = useState([
 		{
 			id: 1,
@@ -37,7 +38,7 @@ function App() {
 		setContent("");
 	};
 
-	const DoneTodoButton = (id) => {
+	const DoneTodoButton = id => { // 완료 버튼
 		const updatedTodo = todo.map((todo) => {
 			if (todo.id === id) {
 				return {
@@ -50,7 +51,7 @@ function App() {
 		setTodo(updatedTodo);
 	};
 
-	const cancleTodoButton = (id) => {
+	const cancleTodoButton = id => { // 취소 버튼
 		const cancleTodo = todo.map((todo) => {
 			if (todo.id === id) {
 				return {
@@ -63,7 +64,7 @@ function App() {
 		setTodo(cancleTodo);
 	};
 
-	const deleteUserHandler = (id) => {
+	const deleteUserHandler = id => {
 		const deleteTodo = todo.filter((todo) => todo.id !== id);
 		setTodo(deleteTodo);
 	};
@@ -82,7 +83,7 @@ function App() {
 				clickAddButtonHandler={clickAddButtonHandler}
 			/>
 
-			<WorkingList
+			<WorkingList // working
 				title='Working...🔥'
 				todo={runningTodo}
 				deleteUserHandler={deleteUserHandler}
@@ -90,7 +91,7 @@ function App() {
 				type={false}
 			/>
 
-			<WorkingList
+			<WorkingList // done
 				title='Done...🎉'
 				todo={doneTodo}
 				deleteUserHandler={deleteUserHandler}
