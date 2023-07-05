@@ -1,18 +1,22 @@
 import * as S from './styled.js'
+import { useSelector } from 'react-redux'
+import { Link } from 'react-router-dom'
 
-function Working({ todo, todoDeleteBtn, todoChangeBtn, state }) {
+function Working({ todoDeleteBtn, todoChangeBtn, isDone }) {
+  const list = useSelector((state) => state.newTodo)
   return (
     <S.Working>
-      <h2>{state ? "Done...🎉" : "Working .. 🔥"}</h2>
+      <h2>{isDone ? "Done...🎉" : "Working .. 🔥"}</h2>
       <S.Wrap>
-        {todo.filter((todo) => todo.state === state).map((todo) => {
+        {list.filter((todo) => todo.isDone === isDone).map((todo) => {
           return (
-            <S.Container>
+            <S.Container key={todo.id}>
+              <Link to={`/detail/${todo.id}`}>more</Link>
               <h2>{todo.title}</h2>
               <p>{todo.content}</p>
               <S.Button>
                 <S.DeleteButton onClick={() => todoDeleteBtn(todo.id)}>삭제</S.DeleteButton>
-                <S.HandleButton onClick={() => todoChangeBtn(todo.id)}>{todo.state ? "취소" : "완료"}</S.HandleButton>
+                <S.HandleButton onClick={() => todoChangeBtn(todo.id)}>{todo.isDone ? "취소" : "완료"}</S.HandleButton>
               </S.Button>
             </S.Container>
           )
