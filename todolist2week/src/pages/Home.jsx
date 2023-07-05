@@ -1,6 +1,5 @@
 import React from 'react'
 import styled from "styled-components";
-// import { useLocation, useNavigate } from 'react-router-dom';
 import Header from '../components/Header/Header';
 import Form from '../components/Form/Form';
 import Working from '../components/Working/Working';
@@ -49,7 +48,7 @@ function Home() {
 
 export default Home;
 
-export const Layout = styled.div`
+const Layout = styled.div`
   margin: 0 auto;
   max-width: 1200px;
   min-width: 800px;
