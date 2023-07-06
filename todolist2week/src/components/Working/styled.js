@@ -30,6 +30,9 @@ export const DeleteButton = styled.button`
   border-radius: 8px;
   height: 40px;
   width: 50%;
+  
+  &:hover{background-color: #FFE4E1;
+          color: #FA8072;}
 `
 
 export const HandleButton = styled.button`
@@ -38,4 +41,7 @@ export const HandleButton = styled.button`
   border-radius: 8px;
   height: 40px;
   width: 50%;
+  
+  &:hover{background-color: #F0FFF0;
+          color: #3CB371;}
 `

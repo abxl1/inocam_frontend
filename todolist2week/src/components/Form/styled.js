@@ -16,7 +16,7 @@ export const Div = styled.div`
 `
 
 export const Button = styled.button`
-  border: 1px solid none;
+  border: 1px solid #3CB371;
   border-radius: 12px;
   background-color: #3CB371;
   color: #F0FFF0;
@@ -24,9 +24,13 @@ export const Button = styled.button`
   height: 40px;
   width: 140px;
   cursor: pointer;
+  
+  &:hover{background-color: #fff;
+          color: #3CB371;}
 `
 
 export const Input = styled.input`
+  border: 1px solid #3CB371;
   border-radius: 12px;
   height: 40px;
   padding: 0 12px;
