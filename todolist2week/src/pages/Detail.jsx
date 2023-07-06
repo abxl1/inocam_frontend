@@ -23,7 +23,7 @@ function Detail() {
         <div>{foundlist.content}</div>
         <Link to="/"><Back>back</Back></Link>
         <ImgLayout>
-          <img src={foundlist.isDone ? rtanDone : rtanWork } alt='진행중 르탄이!'></img>
+          <img src={foundlist.isDone ? rtanDone : rtanWork } alt='르탄이!'></img>
         </ImgLayout>
       </Center>
     </Align>
