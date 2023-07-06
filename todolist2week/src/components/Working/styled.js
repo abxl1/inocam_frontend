@@ -45,3 +45,13 @@ export const HandleButton = styled.button`
   &:hover{background-color: #F0FFF0;
           color: #3CB371;}
 `
+
+export const More = styled.button`
+  border: 2px solid #3CB371;
+  border-radius: 12px;
+  background-color: #3CB371;
+  color: #F0FFF0;
+  cursor: pointer;
+  &:hover{background-color: #F0FFF0;
+          color: #3CB371;}
+`
