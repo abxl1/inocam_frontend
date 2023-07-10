@@ -1,7 +1,4 @@
 // action value
-
-import { createSlice } from "@reduxjs/toolkit";
-
 export const ADD_TODO = "ADD_TODO";
 export const DELETE_TODO = "DELETE_TODO";
 export const CHANGE_TODO = "CHANGE_TODO";
@@ -65,7 +62,5 @@ const newTodo = (state = initialState, action) => {
   }
 }
 
-const newTodoSlice = createSlice();
 
-
-export default newTodoSlice;
+export default newTodo;
