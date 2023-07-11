@@ -2,7 +2,7 @@ import Form from './components/Form'
 import SelectWrap from './components/SelectWrap';
 
 function App() {
-  return (
+  return (     
     <>
       <Form />
       <SelectWrap />
