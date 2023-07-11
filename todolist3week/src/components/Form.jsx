@@ -31,7 +31,7 @@ function Form() {
 
   return (
     <s.Align>
-      <s.H1>input</s.H1>
+      <s.H1>Input</s.H1>
         <s.Form>
           <s.FormInput>
             <label>이름</label>
