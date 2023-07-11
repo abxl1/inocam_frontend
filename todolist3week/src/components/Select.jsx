@@ -31,11 +31,13 @@ function Select({position}) {
     
 
   return ( 
-    // {원하는 거.length > 원하는 길이 ? `${원하는거.slice(0, 원하는 길이)}...` : 원하는 거}
     <>
-      <s.SelectOpen ref={selectRef}>
+      <div ref={selectRef}>
         <s.SelectBtn className="selected-option" onClick={()=>{setIsOpen(!isOpen)}}>
-          {selectedOption}<div>▼</div>
+          <s.OverControl>
+          {selectedOption}
+          </s.OverControl>
+          <div>▼</div>
         </s.SelectBtn>
             {isOpen && (<s.SelecPosition position={position}>
                 {options.map((option, i) => {
@@ -47,7 +49,7 @@ function Select({position}) {
                 })}
               </s.SelecPosition>)
             }
-      </s.SelectOpen>
+      </div>
     </>
   )
 }
