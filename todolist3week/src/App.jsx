@@ -1,13 +1,13 @@
 import Form from './components/Form'
-import Select from './components/Select';
+import SelectWrap from './components/SelectWrap';
 
 function App() {
   return (
     <>
       <Form />
-      <Select />
+      <SelectWrap />
     </>
   )
 }
 
-export default App;
+export default App
