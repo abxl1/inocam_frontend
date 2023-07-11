@@ -37,34 +37,12 @@ export const H1 = styled.h1`
   padding-left: 0px;
 `
 
-export const SelectContainer = styled.div`
-  border: 3px solid gray;
-  margin: 10px;
-`
-
-
-export const SelectZone = styled.div`
-  border: 3px solid gray;
-  margin: 10px;
-`
-
-export const SelectWrapper = styled.div`
-  display : flex; 
-  gap : 10px;
-`
-
-export const SelectAlign = styled.div`
-  position : relative;
-  margin: 10px;
-`
-
 export const SelectBtn = styled.button`
-  border: 1px solid gray;
+  border: 1px solid lightgrey;
   border-radius: 10px;
   display : flex; 
   align-items : center; 
-  justify-content : space-between; 
-  padding : 0px 28x;
+  justify-content : space-between;
   width: 250px;
   height: 30px;
   background-color: #fff;
@@ -75,8 +53,12 @@ export const SelectBtn = styled.button`
   white-space: nowrap;
 `
 
-export const SelectOpen = styled.div`
-  margin: 10px 10px;
+export const OverControl = styled.div`
+  width: 250px;
+  overflow: hidden; // 버튼 내 텍스트 말줄임표
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  display: flex;
 `
 
 export const Wrap = styled.div`
@@ -87,6 +69,7 @@ export const Wrap = styled.div`
 
 export const WrapSelecBtn = styled.div`
   display: flex;
+  gap: 20px;
 `
 
 export const SelecPosition = styled.div`
@@ -95,6 +78,7 @@ export const SelecPosition = styled.div`
   border-radius: 8px;
   background-color: #fff;
   overflow: hidden;
+  /* position: ${(props) => props.position};  */
   width: 250px;
     div {
       overflow: hidden; // 옵션리스트 내 말줄임표
@@ -102,5 +86,7 @@ export const SelecPosition = styled.div`
       white-space: nowrap;
       padding: 8px;
       &:hover {background-color: lightgrey;}
+      /* position: ${(props) => props.position};  */
+
     }
 `

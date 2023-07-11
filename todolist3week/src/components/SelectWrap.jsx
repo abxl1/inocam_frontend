@@ -5,7 +5,7 @@ import * as s from './style';
 function SelectWrap() {
   return (
     <s.Wrap>
-        <s.H1>Select</s.H1>
+        <h1>Select</h1>
         <s.WrapSelecBtn>
           <Select position={'absolute'} />
           <Select position={'static'} />
