@@ -26,8 +26,7 @@ function Select({position}) {
       document.removeEventListener('click', handleClickOutside);
     };
   }, []);
-    
-
+  
   return ( 
     <>
       <div ref={selectRef}>
