@@ -2,7 +2,6 @@ import React from 'react'
 import Modal from './Modal';
 import * as s from '../style'
 
-
 function ModalWrap() {
   return (
     <>
