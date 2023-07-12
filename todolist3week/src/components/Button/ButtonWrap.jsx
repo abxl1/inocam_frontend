@@ -2,8 +2,6 @@ import React from 'react'
 import Buttons from './Buttons';
 import * as s from '../style'
 
-
-
 function ButtonWrap() {
 
   
