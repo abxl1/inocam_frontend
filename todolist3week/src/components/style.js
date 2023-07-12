@@ -72,7 +72,6 @@ export const StConModal = styled.div`
   flex-direction: row;
 `;
 
-// styled components
 export const StModalBox = styled.div`
   opacity: 0.8;
   background-color: rgb(221, 221, 221);
