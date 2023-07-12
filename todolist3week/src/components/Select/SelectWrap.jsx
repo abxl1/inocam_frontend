@@ -14,4 +14,4 @@ function SelectWrap() {
   )
 }
 
-export default SelectWrap
+export default SelectWrap;
