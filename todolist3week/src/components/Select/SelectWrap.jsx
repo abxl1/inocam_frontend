@@ -1,6 +1,6 @@
 import React from 'react'
 import Select from './Select';
-import * as s from './style';
+import * as s from '../style';
 
 function SelectWrap() {
   return (

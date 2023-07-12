@@ -1,5 +1,5 @@
 import React from 'react'
-import * as s from './style'
+import * as s from '../style'
 import { useState } from 'react';
 
 function Form() {

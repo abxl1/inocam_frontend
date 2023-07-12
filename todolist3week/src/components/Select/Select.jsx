@@ -1,5 +1,5 @@
 import React, { useEffect, useRef, useState } from 'react';
-import * as s from './style';
+import * as s from '../style';
 
 function Select({position}) {
   const [isOpen, setIsOpen] = useState(false);
