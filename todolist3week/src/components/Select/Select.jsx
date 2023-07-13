@@ -30,7 +30,7 @@ function Select({position}) {
   return ( 
     <>
       <div ref={selectRef}>
-        <s.SelectBtn className="selected-option" onClick={()=>{setIsOpen(!isOpen)}}>
+        <s.SelectBtn onClick={()=>{setIsOpen(!isOpen)}}>
           <s.OverControl>
           {selectedOption}
           </s.OverControl>
