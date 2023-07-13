@@ -1,7 +1,6 @@
 import { styled } from 'styled-components';
-// export const  = styled.div``
 
-// 전체 정렬/간격 조정
+// 전체 정렬 / 간격 조정
 export const Align = styled.div`
   margin-bottom: 40px;
 `
@@ -31,6 +30,7 @@ export const Btn = styled.button`
 export const StBox = styled.div`
   text-align: left;
   margin: 10px;
+  margin-bottom: 40px;
 `;
 
 export const Container = styled.div`
@@ -57,13 +57,17 @@ export const FormInput = styled.div`
 `
 
 export const FormSaveBtn = styled.button`
-  border: 1px solid greenyellow;
+  border: 1px solid rgb(85, 239, 196);
   border-radius: 8px;
-  background-color: greenyellow;
+  background-color: rgb(85, 239, 196);
   color: #000;
-  width: 100px;
+  width: 110px;
   height: 40px;
   cursor: pointer;
+  &:hover {
+    background-color: rgb(85, 180, 196);
+    border: 1px solid rgb(85, 180, 196);
+  }
 `
 
 // Modal styles
