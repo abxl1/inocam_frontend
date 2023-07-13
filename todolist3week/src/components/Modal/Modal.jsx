@@ -1,49 +1,6 @@
 import React, { useState } from "react";
 import * as s from '../style'
 
-// import styled from "styled-components";
-
-// // styled components
-// const StModalBox = styled.div`
-//   opacity: 0.8;
-//   background-color: rgb(221, 221, 221);
-//   position: fixed;
-//   top: 0;
-//   width: 100vw;
-//   height: 100vh;
-//   inset: 0;
-// `;
-
-// const StModal = styled.div`
-//   position: absolute;
-//   left: calc(50% - 250px);
-//   top: calc(50% - 150px);
-//   border-radius: 12px;
-//   box-sizing: border-box;
-//   padding: 24px;
-//   background-color: #ffffff;
-//   width: 500px;
-//   height: 300px;
-// `;
-
-// const StBtn = styled.button`
-//   width: ${(props) => props.width};
-//   height: ${(props) => props.height};
-//   line-height: calc(${(props) => props.height} - 5px);
-//   background-color: ${(props) => props.backgroundColor};
-//   margin: 3px 5px;
-//   border: ${(props) => props.border};
-//   border-radius: 8px;
-//   box-sizing: border-box;
-//   color: ${(props) => props.color};
-//   font-weight: 600;
-//   font-size: 13.3px;
-// `;
-
-// const RightAlignedContainer = styled.div`
-//   display: flex;
-//   justify-content: flex-end;
-// `;
 // isOpen이라는 상태변수를 사용하여 모달이 열려있는지 여부를 추적.
 // 초기값은 false로, 모달이 기본적으로 닫혀있는 설정.
 function Modal({ modalType }) {
