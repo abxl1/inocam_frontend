@@ -7,7 +7,7 @@ import { waitTwoSeconds } from '../../utils';
 
 export const __addToDo = createAsyncThunk(
   '__addToDo',
-  async (payload, thunkAPI) => {
+  async (payload, thunkAPI) => { // try...catch or dispatch 사용
     try {
       await waitTwoSeconds();
       return payload;
@@ -19,7 +19,7 @@ export const __addToDo = createAsyncThunk(
 
 export const __deleteTodo = createAsyncThunk(
   '__deleteToDo',
-  async (payload, thunkAPI) => {
+  async (payload, thunkAPI) => { // try...catch or dispatch 사용
     try {
       await waitTwoSeconds();
       return payload;
@@ -48,7 +48,8 @@ const todosSlice = createSlice({
     },
   },
 
-  // 비동기 요청을 한다는 것은 요청을 기다리는 시간이나 등등을 계산해야 함 -> 그 과정을 처리하는 엑스트라 리듀서!
+  // 비동기 요청을 한다는 것은 요청을 기다리는 시간이나 등등을 계산해야 함 
+  // -> 그 과정을 처리하는 엑스트라 리듀서!
   
   extraReducers: (builder) => {
     builder.addCase(__addToDo.fulfilled, (state, action) => {
