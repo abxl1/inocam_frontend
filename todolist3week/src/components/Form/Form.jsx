@@ -23,8 +23,9 @@ function Form() {
   // 저장 버튼, input 2개 모두 입력 필요, 가격은 (,) 제외 출력
   const saveBtnEvent = (event) => {
     event.preventDefault();
-    if (inputName.trim() === "" || inputMuch.trim() === "") { // trim() 스페이스바 공백까지도 제거
-      alert("두 값을 모두 입력해 주세요")
+    if (inputName.trim() === "" || 
+        inputMuch.trim() === "") { // trim() 스페이스바 공백까지 모두 제거
+      alert("두 값을 모두 입력해 주세요!")
     } else {
       alert(`{ name: ${inputName}, price: ${inputMuch.replace(/,/g, '')} }`) // (,)는 제거 후 출력
     }    
@@ -36,15 +37,13 @@ function Form() {
         <s.Form>
           <s.FormInput>
             <label>이름</label>
-            <input placeholder='이름을 입력해 주세용' type="text" value={inputName} onChange={inputNameChange}/>
+            <input placeholder='이름을 입력해 주세요!' type="text" value={inputName} onChange={inputNameChange}/>
           </s.FormInput>
           <s.FormInput>
             <label>가격</label>
             <input placeholder='0' type="text" value={inputMuch} onChange={inputMuchChange}/>
           </s.FormInput>
-          <s.FormSaveBtn onClick={(event)=>{saveBtnEvent(event)}}>
-          저장
-          </s.FormSaveBtn>
+          <s.FormSaveBtn onClick={(event)=>{saveBtnEvent(event)}}>저장</s.FormSaveBtn>
         </s.Form>
     </s.Align>
   )
