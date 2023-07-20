@@ -12,20 +12,6 @@ export const H1 = styled.h1`
 `
 
 // Button styles
-export const Btn = styled.button`
-  width: ${(props) => props.width};
-  height: ${(props) => props.height};
-  line-height: calc(${(props) => props.height} - 5px);
-  background-color: ${(props) => props.backgroundColor};
-  margin: 3px 5px;
-  border: ${(props) => props.border};
-  cursor: pointer;
-  border-radius: 8px;
-  box-sizing: border-box;
-  color: ${(props) => props.color};
-  font-weight: 600;
-  font-size: 13.3px;
-`;
 
 export const StBox = styled.div`
   text-align: left;
@@ -105,6 +91,7 @@ export const StBtn = styled.button`
   background-color: ${(props) => props.backgroundColor};
   margin: 3px 5px;
   border: ${(props) => props.border};
+  cursor: pointer;
   border-radius: 8px;
   box-sizing: border-box;
   color: ${(props) => props.color};

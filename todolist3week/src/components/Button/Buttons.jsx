@@ -51,9 +51,9 @@ const Button = ({ button }) => {
     Btn 컴포넌트는 styled-components를 적용한 버튼 태그. height, width, background, color, border
     등의 속성을 props로 전달하고, onClick 이벤트에 showAlert 함수를 연결, 버튼안에 buttonName을 텍스트로 넣음.
     */
-    <s.Btn onClick={() => {showAlert();}} height={height} width={width} backgroundColor={backgroundColor} color={color} border={border}>
+    <s.StBtn onClick={() => {showAlert();}} height={height} width={width} backgroundColor={backgroundColor} color={color} border={border}>
       {buttonName}
-    </s.Btn>
+    </s.StBtn>
   );
 };
 
