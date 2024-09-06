@@ -22,11 +22,13 @@ function App() {
   const onAddTodo = () => {
 
     dispatch(
-      __addToDo({
-        id, // 새로운 ID 생성
-        title,
-        body,
-      })
+      __addToDo(
+        {
+          id, // 새로운 ID 생성
+          title,
+          body,
+        }
+      )
     );
     resetInputs();
   };
